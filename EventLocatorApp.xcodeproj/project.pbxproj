@@ -14,6 +14,8 @@
 		5F072A17216AAE29000DA477 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F072A15216AAE29000DA477 /* LaunchScreen.storyboard */; };
 		5F072A22216AAE29000DA477 /* EventLocatorAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F072A21216AAE29000DA477 /* EventLocatorAppTests.swift */; };
 		5F072A2D216AAE29000DA477 /* EventLocatorAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F072A2C216AAE29000DA477 /* EventLocatorAppUITests.swift */; };
+		5FC73CCA216ABE380046F10E /* categoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FC73CC8216ABE370046F10E /* categoryCollectionViewCell.xib */; };
+		5FC73CCB216ABE380046F10E /* categoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC73CC9216ABE370046F10E /* categoryCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		5F072A28216AAE29000DA477 /* EventLocatorAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventLocatorAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F072A2C216AAE29000DA477 /* EventLocatorAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventLocatorAppUITests.swift; sourceTree = "<group>"; };
 		5F072A2E216AAE29000DA477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FC73CC8216ABE370046F10E /* categoryCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = categoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		5FC73CC9216ABE370046F10E /* categoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = categoryCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		5F072A0B216AAE28000DA477 /* EventLocatorApp */ = {
 			isa = PBXGroup;
 			children = (
+				5FC73CC9216ABE370046F10E /* categoryCollectionViewCell.swift */,
+				5FC73CC8216ABE370046F10E /* categoryCollectionViewCell.xib */,
 				5F072A0C216AAE28000DA477 /* AppDelegate.swift */,
 				5F072A0E216AAE28000DA477 /* ViewController.swift */,
 				5F072A10216AAE28000DA477 /* Main.storyboard */,
@@ -229,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FC73CCA216ABE380046F10E /* categoryCollectionViewCell.xib in Resources */,
 				5F072A17216AAE29000DA477 /* LaunchScreen.storyboard in Resources */,
 				5F072A14216AAE29000DA477 /* Assets.xcassets in Resources */,
 				5F072A12216AAE28000DA477 /* Main.storyboard in Resources */,
@@ -257,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F072A0F216AAE28000DA477 /* ViewController.swift in Sources */,
+				5FC73CCB216ABE380046F10E /* categoryCollectionViewCell.swift in Sources */,
 				5F072A0D216AAE28000DA477 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
