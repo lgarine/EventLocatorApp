@@ -101,5 +101,74 @@
             </objects>
             <point key="canvasLocation" x="46" y="-75"/>
         </scene>
+        <!--Event List View Controller-->
+        <scene sceneID="5m6-RP-pXd">
+            <objects>
+                <viewController storyboardIdentifier="EventListViewController" id="Btb-3y-p6K" customClass="EventListViewController" customModule="EventLocatorApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="heJ-dn-gKA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IT1-EE-QPi">
+                                <rect key="frame" x="8" y="92" width="359" height="564"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="564" id="quh-7l-nzF"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="Btb-3y-p6K" id="R7J-Yt-GIO"/>
+                                    <outlet property="delegate" destination="Btb-3y-p6K" id="NdT-xY-JWs"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfx-xO-Svi">
+                                <rect key="frame" x="40" y="37" width="295" height="30"/>
+                                <color key="backgroundColor" red="0.10883311850000001" green="0.4324400907" blue="0.2219672073" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="QCK-7e-CTJ"/>
+                                    <constraint firstAttribute="width" constant="295" id="oyN-jG-V1U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Select City">
+                                    <color key="titleColor" red="1" green="0.97681658810000005" blue="0.95115916570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectCity:" destination="Btb-3y-p6K" eventType="touchUpInside" id="Dmu-dW-GkL"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oX0-fo-oAa">
+                                <rect key="frame" x="40" y="68" width="295" height="192"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="295" id="A5D-ae-iQw"/>
+                                    <constraint firstAttribute="height" constant="192" id="Q98-dV-EKW"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="Btb-3y-p6K" id="tu2-os-WHG"/>
+                                    <outlet property="delegate" destination="Btb-3y-p6K" id="kI8-Sb-uGk"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.97681658810000005" blue="0.95115916570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oX0-fo-oAa" firstAttribute="top" secondItem="bfx-xO-Svi" secondAttribute="bottom" constant="1" id="137-Il-TDN"/>
+                            <constraint firstItem="Ucj-Bk-Tsr" firstAttribute="trailing" secondItem="IT1-EE-QPi" secondAttribute="trailing" constant="8" id="7M1-pp-cxB"/>
+                            <constraint firstItem="bfx-xO-Svi" firstAttribute="top" secondItem="Ucj-Bk-Tsr" secondAttribute="top" constant="17" id="HoK-HD-9yz"/>
+                            <constraint firstItem="bfx-xO-Svi" firstAttribute="centerX" secondItem="heJ-dn-gKA" secondAttribute="centerX" id="Ua8-5W-i38"/>
+                            <constraint firstItem="oX0-fo-oAa" firstAttribute="centerX" secondItem="heJ-dn-gKA" secondAttribute="centerX" id="eaN-gR-8eV"/>
+                            <constraint firstItem="IT1-EE-QPi" firstAttribute="top" secondItem="Ucj-Bk-Tsr" secondAttribute="top" constant="72" id="iQz-So-XZv"/>
+                            <constraint firstItem="IT1-EE-QPi" firstAttribute="leading" secondItem="Ucj-Bk-Tsr" secondAttribute="leading" constant="8" id="srv-lU-Wgz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ucj-Bk-Tsr"/>
+                    </view>
+                    <connections>
+                        <outlet property="dropDownTable" destination="oX0-fo-oAa" id="Xxr-bM-BFk"/>
+                        <outlet property="eventListTable" destination="IT1-EE-QPi" id="ddK-cf-sb6"/>
+                        <outlet property="selectcityButton" destination="bfx-xO-Svi" id="bQr-AL-hgT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sSC-Sb-8Le" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="721" y="-75"/>
+        </scene>
     </scenes>
 </document>

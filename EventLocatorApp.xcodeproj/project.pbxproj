@@ -16,6 +16,9 @@
 		5F072A2D216AAE29000DA477 /* EventLocatorAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F072A2C216AAE29000DA477 /* EventLocatorAppUITests.swift */; };
 		5FC73CCA216ABE380046F10E /* categoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FC73CC8216ABE370046F10E /* categoryCollectionViewCell.xib */; };
 		5FC73CCB216ABE380046F10E /* categoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC73CC9216ABE370046F10E /* categoryCollectionViewCell.swift */; };
+		5FFFF2CE216AC7C20094FED1 /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFFF2CD216AC7C20094FED1 /* EventListViewController.swift */; };
+		5FFFF2D1216AC8880094FED1 /* EventListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FFFF2CF216AC8880094FED1 /* EventListTableViewCell.xib */; };
+		5FFFF2D2216AC8880094FED1 /* EventListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFFF2D0216AC8880094FED1 /* EventListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		5F072A2E216AAE29000DA477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FC73CC8216ABE370046F10E /* categoryCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = categoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		5FC73CC9216ABE370046F10E /* categoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = categoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		5FFFF2CD216AC7C20094FED1 /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
+		5FFFF2CF216AC8880094FED1 /* EventListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventListTableViewCell.xib; sourceTree = "<group>"; };
+		5FFFF2D0216AC8880094FED1 /* EventListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,8 @@
 		5F072A0B216AAE28000DA477 /* EventLocatorApp */ = {
 			isa = PBXGroup;
 			children = (
+				5FFFF2D0216AC8880094FED1 /* EventListTableViewCell.swift */,
+				5FFFF2CF216AC8880094FED1 /* EventListTableViewCell.xib */,
 				5FC73CC9216ABE370046F10E /* categoryCollectionViewCell.swift */,
 				5FC73CC8216ABE370046F10E /* categoryCollectionViewCell.xib */,
 				5F072A0C216AAE28000DA477 /* AppDelegate.swift */,
@@ -109,6 +117,7 @@
 				5F072A13216AAE29000DA477 /* Assets.xcassets */,
 				5F072A15216AAE29000DA477 /* LaunchScreen.storyboard */,
 				5F072A18216AAE29000DA477 /* Info.plist */,
+				5FFFF2CD216AC7C20094FED1 /* EventListViewController.swift */,
 			);
 			path = EventLocatorApp;
 			sourceTree = "<group>";
@@ -239,6 +248,7 @@
 				5F072A17216AAE29000DA477 /* LaunchScreen.storyboard in Resources */,
 				5F072A14216AAE29000DA477 /* Assets.xcassets in Resources */,
 				5F072A12216AAE28000DA477 /* Main.storyboard in Resources */,
+				5FFFF2D1216AC8880094FED1 /* EventListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,8 +274,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F072A0F216AAE28000DA477 /* ViewController.swift in Sources */,
+				5FFFF2CE216AC7C20094FED1 /* EventListViewController.swift in Sources */,
 				5FC73CCB216ABE380046F10E /* categoryCollectionViewCell.swift in Sources */,
 				5F072A0D216AAE28000DA477 /* AppDelegate.swift in Sources */,
+				5FFFF2D2216AC8880094FED1 /* EventListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +451,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JH38CN4A48;
 				INFOPLIST_FILE = EventLocatorApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -456,6 +469,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JH38CN4A48;
 				INFOPLIST_FILE = EventLocatorApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

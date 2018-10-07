@@ -48,14 +48,14 @@ class ViewController: UIViewController, UICollectionViewDelegate,UICollectionVie
         return cell;
     }
     
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
-//    {
-//
-//        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "EventListViewController") as! EventListViewController
-//        nextViewController.categoryType = self.categoryTextArray.object(at: indexPath.row) as? String;
-//        self.navigationController?.pushViewController(nextViewController, animated: true)
-//    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
+    {
+
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "EventListViewController") as! EventListViewController
+        nextViewController.categoryType = self.categoryTextArray.object(at: indexPath.row) as? String;
+        self.navigationController?.pushViewController(nextViewController, animated: true)
+    }
     
     
     
