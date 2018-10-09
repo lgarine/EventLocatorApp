@@ -29,6 +29,8 @@ class ViewController: UIViewController, UICollectionViewDelegate,UICollectionVie
     
     
     @IBAction func menuButtonAction(_ sender: UIBarButtonItem) {
+        //dummy desc
+        print("Menu Selected")
         
         
     }
