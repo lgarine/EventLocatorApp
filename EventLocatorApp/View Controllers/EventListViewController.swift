@@ -129,11 +129,12 @@ class EventListViewController: UIViewController, UITableViewDelegate,UITableView
         else
         {
             selectcityButton.titleLabel?.text = citylist?.object(at: indexPath.row) as? String;
-
-            //call webservice for fetching events in selected city
-
+            
             dropDownTable.isHidden = true;
             isDrop = !isDrop;
+            
+            //call webservice for fetching events in selected city
+
         }
 
     }

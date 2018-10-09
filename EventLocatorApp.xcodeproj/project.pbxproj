@@ -14,6 +14,8 @@
 		5F072A17216AAE29000DA477 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F072A15216AAE29000DA477 /* LaunchScreen.storyboard */; };
 		5F072A22216AAE29000DA477 /* EventLocatorAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F072A21216AAE29000DA477 /* EventLocatorAppTests.swift */; };
 		5F072A2D216AAE29000DA477 /* EventLocatorAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F072A2C216AAE29000DA477 /* EventLocatorAppUITests.swift */; };
+		5F079C8E216D5D6600CC296A /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F079C8C216D5D6600CC296A /* ENSideMenuNavigationController.swift */; };
+		5F079C8F216D5D6600CC296A /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F079C8D216D5D6600CC296A /* ENSideMenu.swift */; };
 		5F1EC1D5216D4C58007A61C3 /* eventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1EC1D4216D4C58007A61C3 /* eventDetailViewController.swift */; };
 		5FC73CCA216ABE380046F10E /* categoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FC73CC8216ABE370046F10E /* categoryCollectionViewCell.xib */; };
 		5FC73CCB216ABE380046F10E /* categoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC73CC9216ABE370046F10E /* categoryCollectionViewCell.swift */; };
@@ -53,6 +55,8 @@
 		5F072A28216AAE29000DA477 /* EventLocatorAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventLocatorAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F072A2C216AAE29000DA477 /* EventLocatorAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventLocatorAppUITests.swift; sourceTree = "<group>"; };
 		5F072A2E216AAE29000DA477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F079C8C216D5D6600CC296A /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ENSideMenuNavigationController.swift; path = EventLocatorApp/SideMenuLibrary/ENSideMenuNavigationController.swift; sourceTree = SOURCE_ROOT; };
+		5F079C8D216D5D6600CC296A /* ENSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ENSideMenu.swift; path = EventLocatorApp/SideMenuLibrary/ENSideMenu.swift; sourceTree = SOURCE_ROOT; };
 		5F1EC1D4216D4C58007A61C3 /* eventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = eventDetailViewController.swift; sourceTree = "<group>"; };
 		5FC73CC8216ABE370046F10E /* categoryCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = categoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		5FC73CC9216ABE370046F10E /* categoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = categoryCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 		5F072A0B216AAE28000DA477 /* EventLocatorApp */ = {
 			isa = PBXGroup;
 			children = (
+				5F079C8B216D5D3400CC296A /* SideMenuLibrary */,
 				5F1EC1D9216D4D9D007A61C3 /* UI */,
 				5F072A0C216AAE28000DA477 /* AppDelegate.swift */,
 				5F1EC1D6216D4D3A007A61C3 /* View Controllers */,
@@ -136,6 +141,15 @@
 				5F072A2E216AAE29000DA477 /* Info.plist */,
 			);
 			path = EventLocatorAppUITests;
+			sourceTree = "<group>";
+		};
+		5F079C8B216D5D3400CC296A /* SideMenuLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				5F079C8D216D5D6600CC296A /* ENSideMenu.swift */,
+				5F079C8C216D5D6600CC296A /* ENSideMenuNavigationController.swift */,
+			);
+			path = SideMenuLibrary;
 			sourceTree = "<group>";
 		};
 		5F1EC1D6216D4D3A007A61C3 /* View Controllers */ = {
@@ -308,9 +322,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F079C8F216D5D6600CC296A /* ENSideMenu.swift in Sources */,
 				5F1EC1D5216D4C58007A61C3 /* eventDetailViewController.swift in Sources */,
 				5F072A0F216AAE28000DA477 /* ViewController.swift in Sources */,
 				5FFFF2CE216AC7C20094FED1 /* EventListViewController.swift in Sources */,
+				5F079C8E216D5D6600CC296A /* ENSideMenuNavigationController.swift in Sources */,
 				5FC73CCB216ABE380046F10E /* categoryCollectionViewCell.swift in Sources */,
 				5F072A0D216AAE28000DA477 /* AppDelegate.swift in Sources */,
 				5FFFF2D2216AC8880094FED1 /* EventListTableViewCell.swift in Sources */,
@@ -419,7 +435,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -473,7 +489,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
