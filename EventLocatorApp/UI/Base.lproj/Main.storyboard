@@ -170,5 +170,91 @@
             </objects>
             <point key="canvasLocation" x="721" y="-75"/>
         </scene>
+        <!--Event Detail View Controller-->
+        <scene sceneID="74y-JZ-rwP">
+            <objects>
+                <viewController storyboardIdentifier="eventDetailViewController" id="Goz-Aa-F05" customClass="eventDetailViewController" customModule="EventLocatorApp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5eC-9h-DPG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner-spi" translatesAutoresizingMaskIntoConstraints="NO" id="iRM-ff-XdF">
+                                <rect key="frame" x="0.0" y="33" width="375" height="195"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="195" id="ZKg-fq-Evg"/>
+                                </constraints>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sRb-tc-grb">
+                                <rect key="frame" x="0.0" y="236" width="375" height="431"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NFq-Pq-hbm">
+                                        <rect key="frame" x="6" y="8" width="367" height="415"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7N-0C-hxT">
+                                                <rect key="frame" x="16" y="32" width="105" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="105" id="8OU-H2-wfx"/>
+                                                    <constraint firstAttribute="height" constant="21" id="Hvf-hD-lQh"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dO1-5c-qbE">
+                                                <rect key="frame" x="15" y="61" width="333" height="99"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="99" id="HVC-hG-38u"/>
+                                                </constraints>
+                                                <string key="text">vyuvyvyv vtvyvv vyvyvyvyvyv vyvyvyv fygugu drydutdct hugbubujb vyvuvu uibuvtfygv buyfuvyviyg vuivtfdiyfghvyi vyvyv gvyvuvui viuviuviuv</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="dO1-5c-qbE" firstAttribute="leading" secondItem="NFq-Pq-hbm" secondAttribute="leading" constant="15" id="51v-Of-KmL"/>
+                                            <constraint firstItem="dO1-5c-qbE" firstAttribute="top" secondItem="G7N-0C-hxT" secondAttribute="bottom" constant="8" id="5UC-3R-uMl"/>
+                                            <constraint firstAttribute="height" constant="415" id="7Ja-Zd-K7F"/>
+                                            <constraint firstItem="G7N-0C-hxT" firstAttribute="top" secondItem="NFq-Pq-hbm" secondAttribute="top" constant="32" id="Hyr-S3-XTe"/>
+                                            <constraint firstAttribute="trailing" secondItem="dO1-5c-qbE" secondAttribute="trailing" constant="19" id="TPi-2I-gLv"/>
+                                            <constraint firstAttribute="width" constant="367" id="aYF-7k-gU5"/>
+                                            <constraint firstItem="G7N-0C-hxT" firstAttribute="leading" secondItem="NFq-Pq-hbm" secondAttribute="leading" constant="16" id="bXY-vU-Dcq"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="NFq-Pq-hbm" firstAttribute="leading" secondItem="sRb-tc-grb" secondAttribute="leading" constant="6" id="H4D-ss-aYl"/>
+                                    <constraint firstItem="NFq-Pq-hbm" firstAttribute="top" secondItem="sRb-tc-grb" secondAttribute="top" constant="8" id="Ld1-ii-3US"/>
+                                    <constraint firstAttribute="trailing" secondItem="NFq-Pq-hbm" secondAttribute="trailing" constant="2" id="SSE-Tj-bmL"/>
+                                    <constraint firstAttribute="height" constant="431" id="Vk4-iD-f5l"/>
+                                    <constraint firstAttribute="width" constant="375" id="akZ-kO-tyN"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="375" height="500"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iRM-ff-XdF" firstAttribute="leading" secondItem="DDN-FQ-frI" secondAttribute="leading" id="5NZ-6e-F76"/>
+                            <constraint firstItem="iRM-ff-XdF" firstAttribute="trailing" secondItem="DDN-FQ-frI" secondAttribute="trailing" id="P9T-oo-mwD"/>
+                            <constraint firstItem="sRb-tc-grb" firstAttribute="top" secondItem="iRM-ff-XdF" secondAttribute="bottom" constant="8" id="SFQ-Ee-2TS"/>
+                            <constraint firstItem="sRb-tc-grb" firstAttribute="leading" secondItem="DDN-FQ-frI" secondAttribute="leading" id="aWI-Cq-3E6"/>
+                            <constraint firstItem="sRb-tc-grb" firstAttribute="trailing" secondItem="DDN-FQ-frI" secondAttribute="trailing" id="cWX-Lo-eXx"/>
+                            <constraint firstItem="iRM-ff-XdF" firstAttribute="top" secondItem="DDN-FQ-frI" secondAttribute="top" constant="13" id="rKn-7g-8pm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DDN-FQ-frI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hay-hw-FF1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1428" y="-75"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="banner-spi" width="1285" height="308"/>
+    </resources>
 </document>

@@ -114,41 +114,35 @@ class EventListViewController: UIViewController, UITableViewDelegate,UITableView
         
     }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
-//    {
-//
-//        if(tableView == eventListTable)
-//        {
-//
-//            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "eventDetailViewController") as! eventDetailViewController
-//
-//            self.navigationController?.pushViewController(nextViewController, animated: true)
-//        }
-//
-//        else
-//        {
-//            selectcityButton.titleLabel?.text = citylist?.object(at: indexPath.row) as? String;
-//
-//            //call webservice for fetching events in selected city
-//
-//            dropDownTable.isHidden = true;
-//            isDrop = !isDrop;
-//        }
-//
-//    }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+
+        if(tableView == eventListTable)
+        {
+
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "eventDetailViewController") as! eventDetailViewController
+
+            self.navigationController?.pushViewController(nextViewController, animated: true)
+        }
+
+        else
+        {
+            selectcityButton.titleLabel?.text = citylist?.object(at: indexPath.row) as? String;
+
+            //call webservice for fetching events in selected city
+
+            dropDownTable.isHidden = true;
+            isDrop = !isDrop;
+        }
+
+    }
     
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    
-    
-  
     
 
 
