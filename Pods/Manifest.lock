@@ -1,0 +1,16 @@
+PODS:
+  - AKSideMenu (1.4.2)
+
+DEPENDENCIES:
+  - AKSideMenu
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AKSideMenu
+
+SPEC CHECKSUMS:
+  AKSideMenu: aac7d1e523595388dcf480990a1162d8dd865e1a
+
+PODFILE CHECKSUM: caf3d48ca87ceeb15a15ae2d2d2b7fd4428e4fad
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,956 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05D019458670B77A2F57A24C74433923 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */; };
+		0F94E752A64B9478C93315796C890223 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */; };
+		20CAD3EE68082EE3CCBA2665C4928B09 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C473026796F8AFAA2ECD5A761494CE /* CoreGraphics.framework */; };
+		2789B8C87EC783BABFD868903CAA76E3 /* Pods-EventLocatorAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9165650891F8447A24B478947D1C0771 /* Pods-EventLocatorAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E5868012BC945FA5DEECECFE465429A /* Pods-EventLocatorAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 452E867D4566AB0EB50BFC349565AFEA /* Pods-EventLocatorAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F330E7385F63B27DFF8295B6FF29279 /* Pods-EventLocatorAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C39BBF6BCDDE310453CA7C63DBD2D2 /* Pods-EventLocatorAppTests-dummy.m */; };
+		3158A6AD0ECAF98E3B69195A00C81B8D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89163E94743FDDD60913C47150E225B /* UIKit.framework */; };
+		34B75B68BCCCF05915DEDB7389F190BE /* AKSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C0E4DCD5E981A2CB67B0D7BB30B784 /* AKSideMenu.swift */; };
+		3DE4C91C5629C8A96F71D20AEB8DB1C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */; };
+		6CF1E49F55A018A596D477EF3DBA12F9 /* UIViewController+AKSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38918F3870BE02EE553A14295B08A4C /* UIViewController+AKSideMenu.swift */; };
+		711E8EDAD2A427F7AE2E351F6D2EC793 /* Pods-EventLocatorApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A45808528943CB1B20FC32F73E80F2C /* Pods-EventLocatorApp-dummy.m */; };
+		7940A43C08260E4B5883FDEBAD81B623 /* Pods-EventLocatorApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA9AED6E03CBDECFC56F96BBA89FCD8C /* Pods-EventLocatorApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98702C2AA647D07C988212669A888950 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */; };
+		A043E6230ADDD86F5BF70FE23715DE43 /* AKSideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 686D2AFC5C007F279748A58210ED49B9 /* AKSideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB32992C8B853D8F99FAC992CF655A19 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65E433A68C225D6FF6B2CE970853F1D /* QuartzCore.framework */; };
+		ECE9E75547B4F958AF6743EC1B849568 /* AKSideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D134FD8083E482875361B509B9BDE501 /* AKSideMenu-dummy.m */; };
+		F7B933119EF4B28002CB6B367B1E02EF /* Pods-EventLocatorAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9A93CC7EE6A8ECB2F20149080E2FD1 /* Pods-EventLocatorAppUITests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07B1B6B2B77A7C2A068BC33B0C73F289 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA1B01AFC2F8E7094AEC1DD4D0012B91;
+			remoteInfo = AKSideMenu;
+		};
+		640AE1C0F41F34DD8F4B6DC52F4C564F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D4F0ECA2F7DF0354FC0251F3354080F;
+			remoteInfo = "Pods-EventLocatorApp";
+		};
+		A7DE7C9D0628EF1C92528264A75EBB53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D4F0ECA2F7DF0354FC0251F3354080F;
+			remoteInfo = "Pods-EventLocatorApp";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25DD6245DE4204DDEF8028957F8FADC8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26BA58A0FE4C96B42C251C7B52E3F25F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		280CA5063CADB9A5C34D8C2C6FAD00B7 /* Pods-EventLocatorAppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EventLocatorAppUITests-frameworks.sh"; sourceTree = "<group>"; };
+		2A8A2E6FD4F077225AD7ECA034BE4653 /* Pods-EventLocatorAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EventLocatorAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2DD73A522367CE1A585C21A2030FEFE8 /* Pods-EventLocatorApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EventLocatorApp.release.xcconfig"; sourceTree = "<group>"; };
+		3793415AF3478ED1A5695B2356475A1C /* Pods-EventLocatorAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EventLocatorAppUITests.modulemap"; sourceTree = "<group>"; };
+		37C473026796F8AFAA2ECD5A761494CE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		3D02944717AE015C4161BDF8D818625E /* Pods-EventLocatorAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EventLocatorAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		452E867D4566AB0EB50BFC349565AFEA /* Pods-EventLocatorAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EventLocatorAppUITests-umbrella.h"; sourceTree = "<group>"; };
+		4BCE4A876604FE7D6D3F479E2F423050 /* Pods-EventLocatorAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EventLocatorAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		516C05512CE140EFD91555BFDC9C94EE /* Pods-EventLocatorAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EventLocatorAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		56FDD35490D279AFC1A8493A73CBB2D9 /* Pods-EventLocatorAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EventLocatorAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		5AB4D08FAAF3A2BD48CD34FE96B0E055 /* Pods-EventLocatorAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EventLocatorAppTests.modulemap"; sourceTree = "<group>"; };
+		686D2AFC5C007F279748A58210ED49B9 /* AKSideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AKSideMenu-umbrella.h"; sourceTree = "<group>"; };
+		69403E8897E47B38BC4155C3C746695C /* Pods-EventLocatorApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EventLocatorApp-frameworks.sh"; sourceTree = "<group>"; };
+		6A45808528943CB1B20FC32F73E80F2C /* Pods-EventLocatorApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EventLocatorApp-dummy.m"; sourceTree = "<group>"; };
+		6C19A8FD8073B3EB4FF6E000AE5D8DB7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CB2141216E2088374E3E79A59FA6CEF /* Pods_EventLocatorApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EventLocatorApp.framework; path = "Pods-EventLocatorApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F6081FD5C2E30CBE432E59137E11428 /* Pods_EventLocatorAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EventLocatorAppUITests.framework; path = "Pods-EventLocatorAppUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F90BB14E7620A5E89B9A97026EB813A /* Pods-EventLocatorApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EventLocatorApp.modulemap"; sourceTree = "<group>"; };
+		8582F8A1DC3F6AA939B4D260B80AAB1D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DC54642B974025F7CE3694549A4665F /* AKSideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AKSideMenu-prefix.pch"; sourceTree = "<group>"; };
+		8F4D274AFD3D48AA3A9E8E79ED39B461 /* Pods-EventLocatorApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EventLocatorApp-resources.sh"; sourceTree = "<group>"; };
+		9165650891F8447A24B478947D1C0771 /* Pods-EventLocatorAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EventLocatorAppTests-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9CBB3EEA0A19CC807A1BE2434F19FA57 /* Pods-EventLocatorAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EventLocatorAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A4FC41B77579672315A3F61219576AB5 /* Pods-EventLocatorApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EventLocatorApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		A6D0C9C8A11576DDA666E8A0181790D9 /* Pods-EventLocatorApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EventLocatorApp.debug.xcconfig"; sourceTree = "<group>"; };
+		AA9AED6E03CBDECFC56F96BBA89FCD8C /* Pods-EventLocatorApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EventLocatorApp-umbrella.h"; sourceTree = "<group>"; };
+		B4C39BBF6BCDDE310453CA7C63DBD2D2 /* Pods-EventLocatorAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EventLocatorAppTests-dummy.m"; sourceTree = "<group>"; };
+		B65E433A68C225D6FF6B2CE970853F1D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		B95BB4467EBCF046787B412F86ADEC69 /* Pods-EventLocatorAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EventLocatorAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CEA9754F44D62E5D3E88396AB66B7AD5 /* AKSideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AKSideMenu.modulemap; sourceTree = "<group>"; };
+		D119D974155FFB6A105361C9A2F8DB04 /* Pods_EventLocatorAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EventLocatorAppTests.framework; path = "Pods-EventLocatorAppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D134FD8083E482875361B509B9BDE501 /* AKSideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AKSideMenu-dummy.m"; sourceTree = "<group>"; };
+		D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D65674A2E7CF245EE92A9E872DD857E6 /* AKSideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AKSideMenu.xcconfig; sourceTree = "<group>"; };
+		D75399579F62025D3DF1D4020AFAE50A /* Pods-EventLocatorAppUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EventLocatorAppUITests-resources.sh"; sourceTree = "<group>"; };
+		D995DF671B446FC845A5420DD84C725A /* Pods-EventLocatorAppTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EventLocatorAppTests-resources.sh"; sourceTree = "<group>"; };
+		DE9A93CC7EE6A8ECB2F20149080E2FD1 /* Pods-EventLocatorAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EventLocatorAppUITests-dummy.m"; sourceTree = "<group>"; };
+		E89163E94743FDDD60913C47150E225B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E8C0E4DCD5E981A2CB67B0D7BB30B784 /* AKSideMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AKSideMenu.swift; path = AKSideMenu/AKSideMenu.swift; sourceTree = "<group>"; };
+		EAEC7C98107D2FE3BF6057E3170C656B /* Pods-EventLocatorApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EventLocatorApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EB3520EE02B70F42FA057C8745CC32C4 /* Pods-EventLocatorAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EventLocatorAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F38918F3870BE02EE553A14295B08A4C /* UIViewController+AKSideMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+AKSideMenu.swift"; path = "AKSideMenu/UIViewController+AKSideMenu.swift"; sourceTree = "<group>"; };
+		F5EB9EA6954A21E71CEE0BCE9E088B62 /* Pods-EventLocatorAppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EventLocatorAppTests-frameworks.sh"; sourceTree = "<group>"; };
+		F6EBF624844B5905BB0124A5487C5063 /* AKSideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AKSideMenu.framework; path = AKSideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A7FE52D3A40CD239331CDA86E7C43D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98702C2AA647D07C988212669A888950 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5301C282011135F59FDFCEE1E77F922F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05D019458670B77A2F57A24C74433923 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABC6B9202007B03106925C4C0BEDEBEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20CAD3EE68082EE3CCBA2665C4928B09 /* CoreGraphics.framework in Frameworks */,
+				0F94E752A64B9478C93315796C890223 /* Foundation.framework in Frameworks */,
+				BB32992C8B853D8F99FAC992CF655A19 /* QuartzCore.framework in Frameworks */,
+				3158A6AD0ECAF98E3B69195A00C81B8D /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C78717FBA539C623B72256338D5434EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DE4C91C5629C8A96F71D20AEB8DB1C8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53C8B4AB97860F06FE722851EA867B18 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		15D33406411DC926F112521ED5248F02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6EBF624844B5905BB0124A5487C5063 /* AKSideMenu.framework */,
+				6CB2141216E2088374E3E79A59FA6CEF /* Pods_EventLocatorApp.framework */,
+				D119D974155FFB6A105361C9A2F8DB04 /* Pods_EventLocatorAppTests.framework */,
+				6F6081FD5C2E30CBE432E59137E11428 /* Pods_EventLocatorAppUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19E07EC6CE8E769651025D6B319E9D99 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEA9754F44D62E5D3E88396AB66B7AD5 /* AKSideMenu.modulemap */,
+				D65674A2E7CF245EE92A9E872DD857E6 /* AKSideMenu.xcconfig */,
+				D134FD8083E482875361B509B9BDE501 /* AKSideMenu-dummy.m */,
+				8DC54642B974025F7CE3694549A4665F /* AKSideMenu-prefix.pch */,
+				686D2AFC5C007F279748A58210ED49B9 /* AKSideMenu-umbrella.h */,
+				6C19A8FD8073B3EB4FF6E000AE5D8DB7 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AKSideMenu";
+			sourceTree = "<group>";
+		};
+		1BEBAA02188C1300FF5B9E917ADB0271 /* AKSideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				E8C0E4DCD5E981A2CB67B0D7BB30B784 /* AKSideMenu.swift */,
+				F38918F3870BE02EE553A14295B08A4C /* UIViewController+AKSideMenu.swift */,
+				19E07EC6CE8E769651025D6B319E9D99 /* Support Files */,
+			);
+			name = AKSideMenu;
+			path = AKSideMenu;
+			sourceTree = "<group>";
+		};
+		3AE9AF768D4FD23A577ED04DDEFD4B25 /* Pods-EventLocatorApp */ = {
+			isa = PBXGroup;
+			children = (
+				26BA58A0FE4C96B42C251C7B52E3F25F /* Info.plist */,
+				6F90BB14E7620A5E89B9A97026EB813A /* Pods-EventLocatorApp.modulemap */,
+				EAEC7C98107D2FE3BF6057E3170C656B /* Pods-EventLocatorApp-acknowledgements.markdown */,
+				A4FC41B77579672315A3F61219576AB5 /* Pods-EventLocatorApp-acknowledgements.plist */,
+				6A45808528943CB1B20FC32F73E80F2C /* Pods-EventLocatorApp-dummy.m */,
+				69403E8897E47B38BC4155C3C746695C /* Pods-EventLocatorApp-frameworks.sh */,
+				8F4D274AFD3D48AA3A9E8E79ED39B461 /* Pods-EventLocatorApp-resources.sh */,
+				AA9AED6E03CBDECFC56F96BBA89FCD8C /* Pods-EventLocatorApp-umbrella.h */,
+				A6D0C9C8A11576DDA666E8A0181790D9 /* Pods-EventLocatorApp.debug.xcconfig */,
+				2DD73A522367CE1A585C21A2030FEFE8 /* Pods-EventLocatorApp.release.xcconfig */,
+			);
+			name = "Pods-EventLocatorApp";
+			path = "Target Support Files/Pods-EventLocatorApp";
+			sourceTree = "<group>";
+		};
+		53C8B4AB97860F06FE722851EA867B18 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				37C473026796F8AFAA2ECD5A761494CE /* CoreGraphics.framework */,
+				D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */,
+				B65E433A68C225D6FF6B2CE970853F1D /* QuartzCore.framework */,
+				E89163E94743FDDD60913C47150E225B /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
+				D98B262F712E3EB888F30A0B514A8997 /* Pods */,
+				15D33406411DC926F112521ED5248F02 /* Products */,
+				B40064C63962000CC609189277783240 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		92663F9E9A2F1A383D9AA4CA831C713D /* Pods-EventLocatorAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8582F8A1DC3F6AA939B4D260B80AAB1D /* Info.plist */,
+				3793415AF3478ED1A5695B2356475A1C /* Pods-EventLocatorAppUITests.modulemap */,
+				4BCE4A876604FE7D6D3F479E2F423050 /* Pods-EventLocatorAppUITests-acknowledgements.markdown */,
+				2A8A2E6FD4F077225AD7ECA034BE4653 /* Pods-EventLocatorAppUITests-acknowledgements.plist */,
+				DE9A93CC7EE6A8ECB2F20149080E2FD1 /* Pods-EventLocatorAppUITests-dummy.m */,
+				280CA5063CADB9A5C34D8C2C6FAD00B7 /* Pods-EventLocatorAppUITests-frameworks.sh */,
+				D75399579F62025D3DF1D4020AFAE50A /* Pods-EventLocatorAppUITests-resources.sh */,
+				452E867D4566AB0EB50BFC349565AFEA /* Pods-EventLocatorAppUITests-umbrella.h */,
+				EB3520EE02B70F42FA057C8745CC32C4 /* Pods-EventLocatorAppUITests.debug.xcconfig */,
+				516C05512CE140EFD91555BFDC9C94EE /* Pods-EventLocatorAppUITests.release.xcconfig */,
+			);
+			name = "Pods-EventLocatorAppUITests";
+			path = "Target Support Files/Pods-EventLocatorAppUITests";
+			sourceTree = "<group>";
+		};
+		B40064C63962000CC609189277783240 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3AE9AF768D4FD23A577ED04DDEFD4B25 /* Pods-EventLocatorApp */,
+				F0A3FCAB4FEAC05B978A8BA134EA1C87 /* Pods-EventLocatorAppTests */,
+				92663F9E9A2F1A383D9AA4CA831C713D /* Pods-EventLocatorAppUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D98B262F712E3EB888F30A0B514A8997 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1BEBAA02188C1300FF5B9E917ADB0271 /* AKSideMenu */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F0A3FCAB4FEAC05B978A8BA134EA1C87 /* Pods-EventLocatorAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				25DD6245DE4204DDEF8028957F8FADC8 /* Info.plist */,
+				5AB4D08FAAF3A2BD48CD34FE96B0E055 /* Pods-EventLocatorAppTests.modulemap */,
+				9CBB3EEA0A19CC807A1BE2434F19FA57 /* Pods-EventLocatorAppTests-acknowledgements.markdown */,
+				B95BB4467EBCF046787B412F86ADEC69 /* Pods-EventLocatorAppTests-acknowledgements.plist */,
+				B4C39BBF6BCDDE310453CA7C63DBD2D2 /* Pods-EventLocatorAppTests-dummy.m */,
+				F5EB9EA6954A21E71CEE0BCE9E088B62 /* Pods-EventLocatorAppTests-frameworks.sh */,
+				D995DF671B446FC845A5420DD84C725A /* Pods-EventLocatorAppTests-resources.sh */,
+				9165650891F8447A24B478947D1C0771 /* Pods-EventLocatorAppTests-umbrella.h */,
+				3D02944717AE015C4161BDF8D818625E /* Pods-EventLocatorAppTests.debug.xcconfig */,
+				56FDD35490D279AFC1A8493A73CBB2D9 /* Pods-EventLocatorAppTests.release.xcconfig */,
+			);
+			name = "Pods-EventLocatorAppTests";
+			path = "Target Support Files/Pods-EventLocatorAppTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		01D2E3301EA95C15CB5175D2602BF1F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7940A43C08260E4B5883FDEBAD81B623 /* Pods-EventLocatorApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B10390F0BE680DBECA926426CAD78D9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A043E6230ADDD86F5BF70FE23715DE43 /* AKSideMenu-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CCB38327A03D123647DBB07A56F44C6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2789B8C87EC783BABFD868903CAA76E3 /* Pods-EventLocatorAppTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B78778202AA2D806DE3E43F5873DA3A8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E5868012BC945FA5DEECECFE465429A /* Pods-EventLocatorAppUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2D4F0ECA2F7DF0354FC0251F3354080F /* Pods-EventLocatorApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C634AFE8D847F3F4A407D593A2E58278 /* Build configuration list for PBXNativeTarget "Pods-EventLocatorApp" */;
+			buildPhases = (
+				E0B92D92D89738025E054E1F47776F0B /* Sources */,
+				5301C282011135F59FDFCEE1E77F922F /* Frameworks */,
+				01D2E3301EA95C15CB5175D2602BF1F0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FB356A19AFA686751A7AC129255292B /* PBXTargetDependency */,
+			);
+			name = "Pods-EventLocatorApp";
+			productName = "Pods-EventLocatorApp";
+			productReference = 6CB2141216E2088374E3E79A59FA6CEF /* Pods_EventLocatorApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7C7E50A06D00F926935FDCC25CDD7EB8 /* Pods-EventLocatorAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CBE80FFFA6719B1F422023B5A2DCA53 /* Build configuration list for PBXNativeTarget "Pods-EventLocatorAppTests" */;
+			buildPhases = (
+				3FF9A5757365C473F694B946CBCDFEB6 /* Sources */,
+				C78717FBA539C623B72256338D5434EB /* Frameworks */,
+				5CCB38327A03D123647DBB07A56F44C6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA8A52967FF452C7D7FA37EA1A90DCE4 /* PBXTargetDependency */,
+			);
+			name = "Pods-EventLocatorAppTests";
+			productName = "Pods-EventLocatorAppTests";
+			productReference = D119D974155FFB6A105361C9A2F8DB04 /* Pods_EventLocatorAppTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7EF930B12BA2FB2A6BBF7D9424F03E03 /* Pods-EventLocatorAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C945795A7E343350BBE232CC5A076892 /* Build configuration list for PBXNativeTarget "Pods-EventLocatorAppUITests" */;
+			buildPhases = (
+				C2F5564475A004218D3BA4344F5CE145 /* Sources */,
+				0A7FE52D3A40CD239331CDA86E7C43D2 /* Frameworks */,
+				B78778202AA2D806DE3E43F5873DA3A8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D007A9374744720422B8FD457B55562 /* PBXTargetDependency */,
+			);
+			name = "Pods-EventLocatorAppUITests";
+			productName = "Pods-EventLocatorAppUITests";
+			productReference = 6F6081FD5C2E30CBE432E59137E11428 /* Pods_EventLocatorAppUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DA1B01AFC2F8E7094AEC1DD4D0012B91 /* AKSideMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDD2AD9AF76D5046B4F6A444EE7EE234 /* Build configuration list for PBXNativeTarget "AKSideMenu" */;
+			buildPhases = (
+				95F0A71280BBCCBF0CBF99F887BE4166 /* Sources */,
+				ABC6B9202007B03106925C4C0BEDEBEE /* Frameworks */,
+				3B10390F0BE680DBECA926426CAD78D9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AKSideMenu;
+			productName = AKSideMenu;
+			productReference = F6EBF624844B5905BB0124A5487C5063 /* AKSideMenu.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 15D33406411DC926F112521ED5248F02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA1B01AFC2F8E7094AEC1DD4D0012B91 /* AKSideMenu */,
+				2D4F0ECA2F7DF0354FC0251F3354080F /* Pods-EventLocatorApp */,
+				7C7E50A06D00F926935FDCC25CDD7EB8 /* Pods-EventLocatorAppTests */,
+				7EF930B12BA2FB2A6BBF7D9424F03E03 /* Pods-EventLocatorAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FF9A5757365C473F694B946CBCDFEB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F330E7385F63B27DFF8295B6FF29279 /* Pods-EventLocatorAppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95F0A71280BBCCBF0CBF99F887BE4166 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECE9E75547B4F958AF6743EC1B849568 /* AKSideMenu-dummy.m in Sources */,
+				34B75B68BCCCF05915DEDB7389F190BE /* AKSideMenu.swift in Sources */,
+				6CF1E49F55A018A596D477EF3DBA12F9 /* UIViewController+AKSideMenu.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2F5564475A004218D3BA4344F5CE145 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7B933119EF4B28002CB6B367B1E02EF /* Pods-EventLocatorAppUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0B92D92D89738025E054E1F47776F0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				711E8EDAD2A427F7AE2E351F6D2EC793 /* Pods-EventLocatorApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D007A9374744720422B8FD457B55562 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-EventLocatorApp";
+			target = 2D4F0ECA2F7DF0354FC0251F3354080F /* Pods-EventLocatorApp */;
+			targetProxy = A7DE7C9D0628EF1C92528264A75EBB53 /* PBXContainerItemProxy */;
+		};
+		6FB356A19AFA686751A7AC129255292B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AKSideMenu;
+			target = DA1B01AFC2F8E7094AEC1DD4D0012B91 /* AKSideMenu */;
+			targetProxy = 07B1B6B2B77A7C2A068BC33B0C73F289 /* PBXContainerItemProxy */;
+		};
+		AA8A52967FF452C7D7FA37EA1A90DCE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-EventLocatorApp";
+			target = 2D4F0ECA2F7DF0354FC0251F3354080F /* Pods-EventLocatorApp */;
+			targetProxy = 640AE1C0F41F34DD8F4B6DC52F4C564F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08638A96A528B1EC32DE62F8A728389D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		17DC3B7C902A20F9310A8A432B28EC30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 516C05512CE140EFD91555BFDC9C94EE /* Pods-EventLocatorAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EventLocatorAppUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EventLocatorAppUITests/Pods-EventLocatorAppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		75D71DF3B3BF660F003B2E5D142A8813 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB3520EE02B70F42FA057C8745CC32C4 /* Pods-EventLocatorAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EventLocatorAppUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EventLocatorAppUITests/Pods-EventLocatorAppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		98A03CE52E816DA9B46D0EFAA559671D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56FDD35490D279AFC1A8493A73CBB2D9 /* Pods-EventLocatorAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EventLocatorAppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EventLocatorAppTests/Pods-EventLocatorAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9A4258F7B3EE17977F51D90D9904E192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6D0C9C8A11576DDA666E8A0181790D9 /* Pods-EventLocatorApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EventLocatorApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EventLocatorApp/Pods-EventLocatorApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A0AFB5C594470EE659D630847DB763E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D02944717AE015C4161BDF8D818625E /* Pods-EventLocatorAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EventLocatorAppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EventLocatorAppTests/Pods-EventLocatorAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BA10E51788295BFD281E0573EFE7608C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D65674A2E7CF245EE92A9E872DD857E6 /* AKSideMenu.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AKSideMenu/AKSideMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AKSideMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AKSideMenu/AKSideMenu.modulemap";
+				PRODUCT_MODULE_NAME = AKSideMenu;
+				PRODUCT_NAME = AKSideMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EA6F43623458EA4C36F18C295C6F52E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DD73A522367CE1A585C21A2030FEFE8 /* Pods-EventLocatorApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EventLocatorApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EventLocatorApp/Pods-EventLocatorApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EEE89FC006BC6EB3E2DDB23104ADFF3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D65674A2E7CF245EE92A9E872DD857E6 /* AKSideMenu.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AKSideMenu/AKSideMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AKSideMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AKSideMenu/AKSideMenu.modulemap";
+				PRODUCT_MODULE_NAME = AKSideMenu;
+				PRODUCT_NAME = AKSideMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CBE80FFFA6719B1F422023B5A2DCA53 /* Build configuration list for PBXNativeTarget "Pods-EventLocatorAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0AFB5C594470EE659D630847DB763E1 /* Debug */,
+				98A03CE52E816DA9B46D0EFAA559671D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */,
+				08638A96A528B1EC32DE62F8A728389D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C634AFE8D847F3F4A407D593A2E58278 /* Build configuration list for PBXNativeTarget "Pods-EventLocatorApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A4258F7B3EE17977F51D90D9904E192 /* Debug */,
+				EA6F43623458EA4C36F18C295C6F52E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C945795A7E343350BBE232CC5A076892 /* Build configuration list for PBXNativeTarget "Pods-EventLocatorAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75D71DF3B3BF660F003B2E5D142A8813 /* Debug */,
+				17DC3B7C902A20F9310A8A432B28EC30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDD2AD9AF76D5046B4F6A444EE7EE234 /* Build configuration list for PBXNativeTarget "AKSideMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA10E51788295BFD281E0573EFE7608C /* Debug */,
+				EEE89FC006BC6EB3E2DDB23104ADFF3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

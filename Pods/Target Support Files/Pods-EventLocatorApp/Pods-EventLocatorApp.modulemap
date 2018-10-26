@@ -1,0 +1,6 @@
+framework module Pods_EventLocatorApp {
+  umbrella header "Pods-EventLocatorApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

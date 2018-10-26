@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q3y-tJ-rAD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q3y-tJ-rAD">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -35,7 +35,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="26h-c0-ty2">
-                                <rect key="frame" x="48" y="138" width="280" height="489"/>
+                                <rect key="frame" x="47.5" y="138" width="280" height="489"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="280" id="FPr-V3-45c"/>
@@ -63,7 +63,7 @@
                                 </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXH-yu-K8A">
-                                <rect key="frame" x="101" y="80" width="172" height="28"/>
+                                <rect key="frame" x="101.5" y="80" width="172" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="172" id="YDq-DH-MM2"/>
                                     <constraint firstAttribute="height" constant="28" id="fgh-0s-Hzh"/>
@@ -251,7 +251,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hay-hw-FF1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1428" y="-75"/>
+            <point key="canvasLocation" x="2018" y="-99"/>
         </scene>
     </scenes>
     <resources>
