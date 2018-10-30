@@ -7,9 +7,9 @@
 //
 
 import UIKit
+import AKSideMenu
 
-
-class ViewController: UIViewController, UICollectionViewDelegate,UICollectionViewDataSource {
+class ViewController: UIViewController, UICollectionViewDelegate,UICollectionViewDataSource, AKSideMenuDelegate {
 
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     
@@ -29,9 +29,27 @@ class ViewController: UIViewController, UICollectionViewDelegate,UICollectionVie
     }
     
     
+    public override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("FirstViewController will appear")
+    }
+    
+    public override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        print("FirstViewController will disappear")
+    }
+    
+    
     @IBAction func menuButtonAction(_ sender: UIBarButtonItem) {
         //dummy desc
         print("Menu Selected")
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let _:RootViewController = storyBoard.instantiateViewController(withIdentifier: "RootViewController") as! RootViewController
+        
+        sideMenuViewController?.delegate = sideMenuViewController as? AKSideMenuDelegate
+      sideMenuViewController!.presentLeftMenuViewController()
         
         
     }
