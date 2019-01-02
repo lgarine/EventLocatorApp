@@ -44,10 +44,6 @@ class ViewController: UIViewController, UICollectionViewDelegate,UICollectionVie
         //dummy desc
         print("Menu Selected")
         
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        
-        let _:RootViewController = storyBoard.instantiateViewController(withIdentifier: "RootViewController") as! RootViewController
-        
         sideMenuViewController?.delegate = sideMenuViewController as? AKSideMenuDelegate
       sideMenuViewController!.presentLeftMenuViewController()
         

@@ -19,8 +19,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="130" height="160"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aAV-nD-5tm">
-                        <rect key="frame" x="30" y="45" width="70" height="70"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aAV-nD-5tm">
+                        <rect key="frame" x="30" y="45" width="70" height="65"/>
                         <color key="backgroundColor" red="0.42990925800000002" green="0.75615284969999996" blue="0.74830723560000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="70" id="rji-9c-l2e"/>
@@ -51,7 +51,7 @@
                 <outlet property="categoryIcon" destination="aAV-nD-5tm" id="JXs-31-gL9"/>
                 <outlet property="categoryLabel" destination="LTp-QR-oLT" id="VxG-Uj-GBS"/>
             </connections>
-            <point key="canvasLocation" x="-53" y="-8"/>
+            <point key="canvasLocation" x="-54.399999999999999" y="-8.0959520239880067"/>
         </collectionViewCell>
     </objects>
 </document>

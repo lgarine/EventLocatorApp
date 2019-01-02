@@ -20,6 +20,9 @@
 		5F5506222183B93A00696F35 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5506212183B93A00696F35 /* RootViewController.swift */; };
 		5F5506242183BAC900696F35 /* leftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5506232183BAC900696F35 /* leftMenuViewController.swift */; };
 		5F5506262183BADF00696F35 /* rightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5506252183BADF00696F35 /* rightMenuViewController.swift */; };
+		5F75216D2188F389007C786C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F75216C2188F389007C786C /* HomeViewController.swift */; };
+		5F75217021890102007C786C /* NewCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F75216E21890102007C786C /* NewCategoryCollectionViewCell.swift */; };
+		5F75217121890102007C786C /* NewCategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F75216F21890102007C786C /* NewCategoryCollectionViewCell.xib */; };
 		5FC73CCA216ABE380046F10E /* categoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FC73CC8216ABE370046F10E /* categoryCollectionViewCell.xib */; };
 		5FC73CCB216ABE380046F10E /* categoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC73CC9216ABE370046F10E /* categoryCollectionViewCell.swift */; };
 		5FFFF2CE216AC7C20094FED1 /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFFF2CD216AC7C20094FED1 /* EventListViewController.swift */; };
@@ -69,6 +72,9 @@
 		5F5506212183B93A00696F35 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		5F5506232183BAC900696F35 /* leftMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leftMenuViewController.swift; sourceTree = "<group>"; };
 		5F5506252183BADF00696F35 /* rightMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rightMenuViewController.swift; sourceTree = "<group>"; };
+		5F75216C2188F389007C786C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5F75216E21890102007C786C /* NewCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		5F75216F21890102007C786C /* NewCategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewCategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		5FC73CC8216ABE370046F10E /* categoryCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = categoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		5FC73CC9216ABE370046F10E /* categoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = categoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		5FFFF2CD216AC7C20094FED1 /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
@@ -194,6 +200,7 @@
 				5F5506212183B93A00696F35 /* RootViewController.swift */,
 				5F5506232183BAC900696F35 /* leftMenuViewController.swift */,
 				5F5506252183BADF00696F35 /* rightMenuViewController.swift */,
+				5F75216C2188F389007C786C /* HomeViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -212,6 +219,8 @@
 			children = (
 				5FC73CC9216ABE370046F10E /* categoryCollectionViewCell.swift */,
 				5FC73CC8216ABE370046F10E /* categoryCollectionViewCell.xib */,
+				5F75216E21890102007C786C /* NewCategoryCollectionViewCell.swift */,
+				5F75216F21890102007C786C /* NewCategoryCollectionViewCell.xib */,
 			);
 			path = UICollectionViewCell;
 			sourceTree = "<group>";
@@ -344,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FC73CCA216ABE380046F10E /* categoryCollectionViewCell.xib in Resources */,
+				5F75217121890102007C786C /* NewCategoryCollectionViewCell.xib in Resources */,
 				5F072A17216AAE29000DA477 /* LaunchScreen.storyboard in Resources */,
 				5F072A14216AAE29000DA477 /* Assets.xcassets in Resources */,
 				5F072A12216AAE28000DA477 /* Main.storyboard in Resources */,
@@ -452,8 +462,10 @@
 				5F10AF4C217684E700A07BFE /* WebService.swift in Sources */,
 				5FFFF2CE216AC7C20094FED1 /* EventListViewController.swift in Sources */,
 				5FC73CCB216ABE380046F10E /* categoryCollectionViewCell.swift in Sources */,
+				5F75217021890102007C786C /* NewCategoryCollectionViewCell.swift in Sources */,
 				5F072A0D216AAE28000DA477 /* AppDelegate.swift in Sources */,
 				5F5506262183BADF00696F35 /* rightMenuViewController.swift in Sources */,
+				5F75216D2188F389007C786C /* HomeViewController.swift in Sources */,
 				5F5506242183BAC900696F35 /* leftMenuViewController.swift in Sources */,
 				5F5506222183B93A00696F35 /* RootViewController.swift in Sources */,
 				5FFFF2D2216AC8880094FED1 /* EventListTableViewCell.swift in Sources */,
