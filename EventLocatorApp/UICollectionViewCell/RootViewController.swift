@@ -19,14 +19,14 @@ class RootViewController: AKSideMenu, AKSideMenuDelegate{
         self.contentViewShadowOpacity = 0.6
         self.contentViewShadowRadius = 12
         self.contentViewShadowEnabled = true
-        
+
         self.backgroundImage = UIImage(named: "Stars")
         self.delegate = self
-        
+
         if let storyboard = self.storyboard {
             self.contentViewController = storyboard.instantiateViewController(withIdentifier: "contentViewController")
-            self.leftMenuViewController = storyboard.instantiateViewController(withIdentifier: "leftMenuViewController")
-            self.rightMenuViewController = storyboard.instantiateViewController(withIdentifier: "rightMenuViewController")
+           self.leftMenuViewController = storyboard.instantiateViewController(withIdentifier: "leftMenuViewController")
+            //self.rightMenuViewController = storyboard.instantiateViewController(withIdentifier: "rightMenuViewController")
         }
     }
     
@@ -35,15 +35,15 @@ class RootViewController: AKSideMenu, AKSideMenuDelegate{
     public func sideMenu(_ sideMenu: AKSideMenu, willShowMenuViewController menuViewController: UIViewController) {
         print("willShowMenuViewController")
     }
-    
+
     public func sideMenu(_ sideMenu: AKSideMenu, didShowMenuViewController menuViewController: UIViewController) {
         print("didShowMenuViewController")
     }
-    
+
     public func sideMenu(_ sideMenu: AKSideMenu, willHideMenuViewController menuViewController: UIViewController) {
         print("willHideMenuViewController")
     }
-    
+
     public func sideMenu(_ sideMenu: AKSideMenu, didHideMenuViewController menuViewController: UIViewController) {
         print("didHideMenuViewController")
     }

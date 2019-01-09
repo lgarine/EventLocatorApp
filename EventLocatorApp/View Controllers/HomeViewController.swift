@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Contacts
 
 class HomeViewController: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource,UITableViewDelegate,UITableViewDataSource {
     
@@ -15,6 +16,8 @@ class HomeViewController: UIViewController,UICollectionViewDelegate, UICollectio
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     
     @IBOutlet weak var eventListTable: UITableView!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +34,36 @@ class HomeViewController: UIViewController,UICollectionViewDelegate, UICollectio
         categoryTextArray = NSArray(objects: "Spiritual","Entertinement","Educational","Medical","Social","Family")
         categoryCollectionView.backgroundColor = UIColor.darkGray;
         
+        self.getDataFromUrl();
+        
+    
     }
+    
+    func getDataFromUrl(){
+        
+        //get data from 
+        
+    }
+    
+    @IBAction func menuButtonAction(_ sender: Any) {
+        
+    self.sideMenuViewController?.presentLeftMenuViewController()
+        
+    }
+    @IBAction func addEventButtonAction(_ sender: Any) {
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "AddEventViewController") as! AddEventViewController
+        //self.navigationController?.pushViewController(nextViewController, animated: true)
+        
+      
+        let pesentingNavigationController = UINavigationController(rootViewController: nextViewController)
+        self.present(pesentingNavigationController, animated: true, completion: nil)
+        
+        //self.navigationController?.present(nextViewController, animated: true, completion:nil)
+            
+    }
+    
     
     //MARK: CollectionviewDelegate
     

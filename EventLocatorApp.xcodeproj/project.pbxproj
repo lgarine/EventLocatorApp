@@ -17,6 +17,8 @@
 		5F072A2D216AAE29000DA477 /* EventLocatorAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F072A2C216AAE29000DA477 /* EventLocatorAppUITests.swift */; };
 		5F10AF4C217684E700A07BFE /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F10AF4B217684E700A07BFE /* WebService.swift */; };
 		5F1EC1D5216D4C58007A61C3 /* eventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1EC1D4216D4C58007A61C3 /* eventDetailViewController.swift */; };
+		5F40A25321DD70EC006E9B40 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F40A25221DD70EC006E9B40 /* AddEventViewController.swift */; };
+		5F42C24121E5472600268922 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F42C24021E5472600268922 /* Constants.swift */; };
 		5F5506222183B93A00696F35 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5506212183B93A00696F35 /* RootViewController.swift */; };
 		5F5506242183BAC900696F35 /* leftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5506232183BAC900696F35 /* leftMenuViewController.swift */; };
 		5F5506262183BADF00696F35 /* rightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5506252183BADF00696F35 /* rightMenuViewController.swift */; };
@@ -69,6 +71,8 @@
 		5F072A2E216AAE29000DA477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F10AF4B217684E700A07BFE /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		5F1EC1D4216D4C58007A61C3 /* eventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = eventDetailViewController.swift; sourceTree = "<group>"; };
+		5F40A25221DD70EC006E9B40 /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
+		5F42C24021E5472600268922 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5F5506212183B93A00696F35 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		5F5506232183BAC900696F35 /* leftMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leftMenuViewController.swift; sourceTree = "<group>"; };
 		5F5506252183BADF00696F35 /* rightMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rightMenuViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 		5F072A00216AAE28000DA477 = {
 			isa = PBXGroup;
 			children = (
+				5F42C24021E5472600268922 /* Constants.swift */,
 				5F072A0C216AAE28000DA477 /* AppDelegate.swift */,
 				5F072A0B216AAE28000DA477 /* EventLocatorApp */,
 				5F072A20216AAE29000DA477 /* EventLocatorAppTests */,
@@ -197,10 +202,10 @@
 				5F072A0E216AAE28000DA477 /* ViewController.swift */,
 				5FFFF2CD216AC7C20094FED1 /* EventListViewController.swift */,
 				5F1EC1D4216D4C58007A61C3 /* eventDetailViewController.swift */,
-				5F5506212183B93A00696F35 /* RootViewController.swift */,
 				5F5506232183BAC900696F35 /* leftMenuViewController.swift */,
 				5F5506252183BADF00696F35 /* rightMenuViewController.swift */,
 				5F75216C2188F389007C786C /* HomeViewController.swift */,
+				5F40A25221DD70EC006E9B40 /* AddEventViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -217,6 +222,7 @@
 		5F1EC1D8216D4D59007A61C3 /* UICollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				5F5506212183B93A00696F35 /* RootViewController.swift */,
 				5FC73CC9216ABE370046F10E /* categoryCollectionViewCell.swift */,
 				5FC73CC8216ABE370046F10E /* categoryCollectionViewCell.xib */,
 				5F75216E21890102007C786C /* NewCategoryCollectionViewCell.swift */,
@@ -458,6 +464,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F1EC1D5216D4C58007A61C3 /* eventDetailViewController.swift in Sources */,
+				5F40A25321DD70EC006E9B40 /* AddEventViewController.swift in Sources */,
 				5F072A0F216AAE28000DA477 /* ViewController.swift in Sources */,
 				5F10AF4C217684E700A07BFE /* WebService.swift in Sources */,
 				5FFFF2CE216AC7C20094FED1 /* EventListViewController.swift in Sources */,
@@ -467,6 +474,7 @@
 				5F5506262183BADF00696F35 /* rightMenuViewController.swift in Sources */,
 				5F75216D2188F389007C786C /* HomeViewController.swift in Sources */,
 				5F5506242183BAC900696F35 /* leftMenuViewController.swift in Sources */,
+				5F42C24121E5472600268922 /* Constants.swift in Sources */,
 				5F5506222183B93A00696F35 /* RootViewController.swift in Sources */,
 				5FFFF2D2216AC8880094FED1 /* EventListTableViewCell.swift in Sources */,
 			);
