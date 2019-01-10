@@ -39,6 +39,12 @@ class HomeViewController: UIViewController,UICollectionViewDelegate, UICollectio
     
     }
     
+    
+    func getCurrentlocation()
+    {
+        
+    }
+    
     func getDataFromUrl(){
         
         //get data from 
