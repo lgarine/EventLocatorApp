@@ -8,8 +8,9 @@
 
 import UIKit
 import Contacts
+import CoreLocation
 
-class HomeViewController: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource,UITableViewDelegate,UITableViewDataSource {
+class HomeViewController: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource,UITableViewDelegate,UITableViewDataSource,LocationSelectionViewControllerDelegate {
     
     var imagesArray:NSArray = [] ;
     var categoryTextArray:NSArray = [] ;
@@ -17,8 +18,9 @@ class HomeViewController: UIViewController,UICollectionViewDelegate, UICollectio
     
     @IBOutlet weak var eventListTable: UITableView!
     
-    
-    
+    var chooseLocationButton:UIButton?
+    var currentLocationName:String?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,22 +36,93 @@ class HomeViewController: UIViewController,UICollectionViewDelegate, UICollectio
         categoryTextArray = NSArray(objects: "Spiritual","Entertinement","Educational","Medical","Social","Family")
         categoryCollectionView.backgroundColor = UIColor.darkGray;
         
-        self.getDataFromUrl();
+      
         
+         self.getCurrentlocation()
+        self.getDataFromUrl()
+        
+        self.setUI()
+        
+    }
     
+    func setUI()
+    {
+        self.chooseLocationButton = UIButton(frame: CGRect(x: 0, y: 0, width: 130, height: 44))
+        chooseLocationButton?.titleLabel?.textAlignment = .center
+        //self.chooseLocationButton.titleEdgeInsets = UIEdgeInsetsMake(0, 5, 0, 0);
+        self.chooseLocationButton?.setTitle("Location", for: UIControlState.normal)
+        
+        if let font = UIFont(name: "Archer-Semibold", size: 19.0) {
+            chooseLocationButton?.titleLabel?.font = font
+        }
+        self.chooseLocationButton?.setTitleColor(UIColor.darkGray, for: UIControlState.normal)
+        
+        chooseLocationButton?.addTarget(self, action: #selector(locationSelection), for: .touchUpInside)
+        
+        navigationItem.titleView = chooseLocationButton
+        
+        
     }
     
     
     func getCurrentlocation()
     {
-        
+       
+        Locationmanager.sharedInstance.getCurrentReverseGeoCodedLocation { (location:CLLocation?, placemark:CLPlacemark?, error:NSError?) in
+            if error != nil {
+//                self.alertMessage(message: (error?.localizedDescription)!, buttonText: "OK", completionHandler: nil)
+                
+                print((error?.localizedDescription)!)
+                
+                return
+            }
+            guard let _ = location else {
+                return
+            }
+            print(placemark?.administrativeArea ?? "")
+            print(placemark?.name ?? "")
+            print(placemark?.country ?? "")
+            print(placemark?.areasOfInterest ?? "")
+            print(placemark?.isoCountryCode ?? "")
+            print("Location is",placemark?.location ?? "")
+            print("Locality is",placemark?.locality ?? "")
+            print(placemark?.subLocality ?? "")
+            print(placemark?.postalCode ?? "")
+            print(placemark?.timeZone ?? "")
+            print(placemark?.addressDictionary?.description ?? "")
+            
+            let address = placemark?.addressDictionary?["FormattedAddressLines"] as! NSArray
+           // self.addressLabel.text = address.description
+            
+        //    self.locationButton.titleLabel?.text = placemark?.locality
+            
+   self.chooseLocationButton?.setTitle(placemark?.locality, for: UIControlState.normal)
+                
+            
+//            self.latitudeLabel.text = "\((placemark?.location?.coordinate.latitude)!)"
+//            self.longitudeLabel.text = "\((placemark?.location?.coordinate.longitude)!)"
+        }
     }
+    
     
     func getDataFromUrl(){
         
         //get data from 
         
     }
+    
+    @objc func locationSelection()
+    {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "LocationSelectionViewController") as! LocationSelectionViewController
+        //self.navigationController?.pushViewController(nextViewController, animated: true)
+        
+        nextViewController.delegate = self;
+        
+        let pesentingNavigationController = UINavigationController(rootViewController: nextViewController)
+        self.present(pesentingNavigationController, animated: true, completion: nil)
+    }
+    
     
     @IBAction func menuButtonAction(_ sender: Any) {
         
@@ -91,26 +164,19 @@ class HomeViewController: UIViewController,UICollectionViewDelegate, UICollectio
         // call a webservice to load category specific events.
     }
     
+   
+    
     //MARK: TableviewDelegate
     
-    
+   
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-//        if(tableView == dropDownTable)
-//        {
-//            return (citylist?.count)!;
-//        }
-//        else
-//        {
             return 10;
-        //}
+       
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        
-//        if(tableView == eventListTable)
-//        {
         
             let cell = tableView.dequeueReusableCell(withIdentifier: "EventListTableViewCell", for: indexPath) as! EventListTableViewCell
             
@@ -142,20 +208,26 @@ class HomeViewController: UIViewController,UICollectionViewDelegate, UICollectio
 //
             return cell;
             
-//        }
-//        else
-//        {
-//            let    cell = UITableViewCell.init(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
-//
-//
-//            cell.textLabel?.text = citylist?.object(at: indexPath.row) as? String;
-//            return cell;
-//        }
-        
         
     }
     
+     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+     {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "eventDetailViewController") as! eventDetailViewController
+      self.navigationController?.pushViewController(nextViewController, animated: true)
+        
+    }
 
- 
-
+    
+    //MARK:- LocationSelectionViewControllerDelegate
+    
+    func LocationSelectionVCIsDone(city: String?) {
+        
+         self.chooseLocationButton?.setTitle(city, for: UIControlState.normal)
+        
+    }
+    
+    
+    
 }

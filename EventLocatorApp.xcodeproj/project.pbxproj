@@ -15,6 +15,7 @@
 		5F072A17216AAE29000DA477 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F072A15216AAE29000DA477 /* LaunchScreen.storyboard */; };
 		5F072A22216AAE29000DA477 /* EventLocatorAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F072A21216AAE29000DA477 /* EventLocatorAppTests.swift */; };
 		5F072A2D216AAE29000DA477 /* EventLocatorAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F072A2C216AAE29000DA477 /* EventLocatorAppUITests.swift */; };
+		5F10AF0721F0E78900DA14CA /* LocationSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F10AF0621F0E78900DA14CA /* LocationSelectionViewController.swift */; };
 		5F10AF4C217684E700A07BFE /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F10AF4B217684E700A07BFE /* WebService.swift */; };
 		5F1EC1D5216D4C58007A61C3 /* eventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1EC1D4216D4C58007A61C3 /* eventDetailViewController.swift */; };
 		5F40A25321DD70EC006E9B40 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F40A25221DD70EC006E9B40 /* AddEventViewController.swift */; };
@@ -70,6 +71,7 @@
 		5F072A28216AAE29000DA477 /* EventLocatorAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventLocatorAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F072A2C216AAE29000DA477 /* EventLocatorAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventLocatorAppUITests.swift; sourceTree = "<group>"; };
 		5F072A2E216AAE29000DA477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F10AF0621F0E78900DA14CA /* LocationSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSelectionViewController.swift; sourceTree = "<group>"; };
 		5F10AF4B217684E700A07BFE /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		5F1EC1D4216D4C58007A61C3 /* eventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = eventDetailViewController.swift; sourceTree = "<group>"; };
 		5F40A25221DD70EC006E9B40 /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
@@ -191,6 +193,15 @@
 			path = EventLocatorAppUITests;
 			sourceTree = "<group>";
 		};
+		5F10AF0521F0E73500DA14CA /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				5F5506232183BAC900696F35 /* leftMenuViewController.swift */,
+				5F5506252183BADF00696F35 /* rightMenuViewController.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
 		5F10AF4A21767CF100A07BFE /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,13 +213,13 @@
 		5F1EC1D6216D4D3A007A61C3 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5F10AF0521F0E73500DA14CA /* Menu */,
 				5F072A0E216AAE28000DA477 /* ViewController.swift */,
 				5FFFF2CD216AC7C20094FED1 /* EventListViewController.swift */,
 				5F1EC1D4216D4C58007A61C3 /* eventDetailViewController.swift */,
-				5F5506232183BAC900696F35 /* leftMenuViewController.swift */,
-				5F5506252183BADF00696F35 /* rightMenuViewController.swift */,
 				5F75216C2188F389007C786C /* HomeViewController.swift */,
 				5F40A25221DD70EC006E9B40 /* AddEventViewController.swift */,
+				5F10AF0621F0E78900DA14CA /* LocationSelectionViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -488,6 +499,7 @@
 				5F5506242183BAC900696F35 /* leftMenuViewController.swift in Sources */,
 				5F42C24121E5472600268922 /* Constants.swift in Sources */,
 				5F5506222183B93A00696F35 /* RootViewController.swift in Sources */,
+				5F10AF0721F0E78900DA14CA /* LocationSelectionViewController.swift in Sources */,
 				5FFFF2D2216AC8880094FED1 /* EventListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
