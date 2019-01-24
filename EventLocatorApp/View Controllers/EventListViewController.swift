@@ -15,6 +15,8 @@ class EventListViewController: UIViewController, UITableViewDelegate,UITableView
     
     @IBOutlet weak var eventListTable: UITableView!
     
+    var chooseLocationButton:UIButton?
+    
     var categoryType:String?
     
     var isDrop:Bool = true;
@@ -33,6 +35,18 @@ class EventListViewController: UIViewController, UITableViewDelegate,UITableView
         citylist = NSArray(objects: "Select City","Kansas","Chicago","Dallas","New York","CA","NC","DC")
         
         print("new test line for checking commit");
+        
+        self.chooseLocationButton = UIButton(frame: CGRect(x: 0, y: 0, width: 130, height: 44))
+        chooseLocationButton?.titleLabel?.textAlignment = .center
+        //self.chooseLocationButton.titleEdgeInsets = UIEdgeInsetsMake(0, 5, 0, 0);
+       // chooseLocationButton?.addTarget(self, action: #selector(self.chooseLocationButton(_:)), for: .touchUpInside)
+        //[self.chooseLocationButton setTitleColor:[UIColor redButtonColor1] forState:UIControlStateNormal];
+        if let font = UIFont(name: "Archer-Semibold", size: 19.0) {
+            chooseLocationButton?.titleLabel?.font = font
+        }
+        
+        // [self.chooseLocationButton setTitle:self.title forState:UIControlStateNormal];
+        navigationItem.titleView = chooseLocationButton
         
     }
     
