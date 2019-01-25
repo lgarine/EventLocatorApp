@@ -75,13 +75,34 @@
                     <view key="view" contentMode="scaleToFill" id="5Pn-Ao-8lB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MjL-0z-6Vc">
+                                <rect key="frame" x="0.0" y="57" width="375" height="411"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="411" id="yjD-w1-0IV"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="cg7-u5-0Ht" id="dcB-3R-pox"/>
+                                    <outlet property="delegate" destination="cg7-u5-0Ht" id="qlJ-1E-qgV"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MjL-0z-6Vc" firstAttribute="leading" secondItem="uwp-Eg-vj3" secondAttribute="leading" id="AOW-fR-MBV"/>
+                            <constraint firstItem="MjL-0z-6Vc" firstAttribute="top" secondItem="uwp-Eg-vj3" secondAttribute="top" constant="37" id="Ff7-X8-BQ3"/>
+                            <constraint firstItem="MjL-0z-6Vc" firstAttribute="trailing" secondItem="uwp-Eg-vj3" secondAttribute="trailing" id="jFK-37-NKw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="uwp-Eg-vj3"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="MjL-0z-6Vc" id="i2n-se-c4r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pF4-gN-UUi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2303" y="-658"/>
+            <point key="canvasLocation" x="2301.5999999999999" y="-658.02098950524737"/>
         </scene>
         <!--Right Menu View Controller-->
         <scene sceneID="UIT-9t-aXK">
